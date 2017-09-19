@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<p class="panel-title"> Add New Employee </p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addEmployee()">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" ng-model="employee.name">
+			</div>
+			<div class="form-group">
+				<label for="dept">Department:</label>
+				<input type="text" class="form-control" id="dept" ng-model="employee.dept">
+			</div>
+			<div class="form-group">
+				<label for="tech">Technology:</label>
+				<input type="text" class="form-control" id="tech" ng-model="employee.technology">
+			</div>
+			<div class="form-group">
+				<label for="sal">Salary:</label>
+				<input type="text" class="form-control" id="sal" ng-model="employee.salary">
+			</div>
+			<button type="submit" class="btn btn-default">Save</button>
+			<a href="#/employees" class="btn btn-default"> Cancel </a>
+		</form>
+	</div>
+</div>
